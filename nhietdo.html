@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doC= +prompt('nhap vao')
+    let flag=true
+    while(flag){
+        if(doC>100){
+            doC= +prompt('giam nhiet do xuong')
+        }else if(doC<20){
+            doC=+prompt('tang nhiet do len')
+        }else if(doC>=20&&doC<100){
+            flag=false;
+        }else{
+            doC=+prompt('nhap lai gia tri dung');
+        }
+    }
+    document.write('nhiet do la :',doC)
+</script>
+</body>
+</html>
